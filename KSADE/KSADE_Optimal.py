@@ -127,7 +127,7 @@ class Dynamic_Graph():
                 num_students+=1
             if check_time==1:
                 start=time()
-                print [i[0],i[1]+1,i[2]+1]
+                print([i[0],i[1]+1,i[2]+1])
             if self._list==[]:
                 temp=graph(Graph=[[] for j in range(8)])
                 temp.add_edge(i)
@@ -147,13 +147,13 @@ class Dynamic_Graph():
                 self._list=temp
             if check_time==1:
                 end=time()                
-                print end-start
+                print(end-start)
         return self._list
     
     def find_optimal(self):
         if len(self._list)==0:
-            print "-------------------Result--------------------"
-            print "No such Match"
+            print("-------------------Result--------------------")
+            print("No such Match")
             return None
         Max=0
         maxGraph=graph()

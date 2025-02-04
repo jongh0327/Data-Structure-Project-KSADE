@@ -124,9 +124,6 @@ def main(text_input):
             inputList=i.split()
             Graph.add_trade(trade(inputList))
         a=Graph.find_all_match()
-        #print "-------------------Result--------------------"
-        #for i in a:
-            #print i
         f.close()
         return a
 
