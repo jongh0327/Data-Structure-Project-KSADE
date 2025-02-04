@@ -3,7 +3,7 @@ import csv
 
 def main(text_input):
     try:
-        f = open(text_input, 'r')
+        f = open(text_input, 'r',encoding='utf-8')
     except IOError:
         return "Error"
     except TypeError:

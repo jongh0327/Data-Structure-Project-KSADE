@@ -109,7 +109,6 @@ class Dynamic_Graph():
         self._students=[]
         
     def find_matches(self,f,Threshold):
-        #f=open(textfile,"r")
         lines=f.readlines()
         for i in range(len(lines)):
             if i!=len(lines)-1:
@@ -173,7 +172,7 @@ class Dynamic_Graph():
          
 def main(text_input,Threshold):     
     try:
-        f=open(text_input,"r")
+        f=open(text_input,"r",encoding='utf-8')
     except IOError:
         f.close()
         return "Error"

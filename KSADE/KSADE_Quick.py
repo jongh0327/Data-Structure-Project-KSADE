@@ -60,7 +60,7 @@ class graph():
                     result.append(a)
                     if a[1]==intersection:
                         break
-                for i in range(len(result)/2):
+                for i in range(len(result)//2):
                     result[i],result[len(result)-1-i]=result[len(result)-1-i],result[i]
                 return result            
             
@@ -109,7 +109,7 @@ class graph():
 
 def main(text_input):
     try:
-        f=open(text_input,"r")
+        f=open(text_input,"r",encoding='utf-8')
     except IOError:
         f.close()
         return "Error"

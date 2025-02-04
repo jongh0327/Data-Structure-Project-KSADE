@@ -5,6 +5,9 @@ import csv_to_text
 import KSADE_Optimal 
 import KSADE_Quick
 from time import*
+import os
+
+os.chdir(r"C:\Users\Jonghyun Lee\Desktop\KSADE")
 
 window=Tk()
 window.title("KSADE")
@@ -14,7 +17,7 @@ main=Frame(window)
 convertCSV=Frame(window,bd=30)
 match=Frame(window,bd=30)
 
-main_image=PhotoImage(file="./KSADE.gif")
+main_image=PhotoImage(file="KSADE.gif")
 image1=Label(Image,image=main_image)
 image1.grid(row=0,columnspan=2) 
 
